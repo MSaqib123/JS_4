@@ -29,3 +29,40 @@ const restaurant = {
     },
   },
 };
+
+
+//--------------------- object DeStructring ------------------
+//--- name should be same as object property ---
+const {name,categories,openingHours} = restaurant;
+console.log(name,categories,openingHours);
+
+//--- diferentname ---
+const {
+    name:resturentName,
+    categories:cat,
+    openingHours:oH
+} = restaurant;
+console.log(resturentName,cat,oH);
+
+//--- set default values ---
+const {
+    menu = [],
+    name:resturent=[],
+} = restaurant;
+
+console.log(menu,resturent);
+
+//--- Replace object ---
+let obj = {a:23,b:7,c:14};
+({a,b} = obj)
+console.log(a,b);
+
+//--- Nested object ---
+const {
+    fri:{open:o,close:c}
+} = openingHours
+// console.log(fri);
+// console.log(open,close);
+console.log(o,c);
+
+
