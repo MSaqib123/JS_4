@@ -59,10 +59,17 @@ console.log(a,b);
 
 //--- Nested object ---
 const {
-    fri:{open:o,close:c}
+    fri:{open:close}
 } = openingHours
 // console.log(fri);
-// console.log(open,close);
+console.log(open,close);
+
+
+//--- Nested object with custom name ---
+const {
+    fri:{open:o,close:c}
+} = openingHours
 console.log(o,c);
+
 
 
