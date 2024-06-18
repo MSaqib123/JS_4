@@ -64,6 +64,7 @@ let [i,,[j,k]] = nested;
 console.log(i,j,k);
 
 //--------------------- default value Array DeStructring ------------------
+//if array value is not exist or empyt then it will set default value
 const[l=1,m=1,n=1] = [5,4]
 console.log(l);
 console.log(m);
