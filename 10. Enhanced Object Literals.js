@@ -111,5 +111,6 @@ const openingHours = {
       close: 24,
     },
   };
+  console.log(openingHoursDynamically)
   
   
