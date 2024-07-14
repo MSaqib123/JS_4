@@ -1,4 +1,34 @@
 //__________ The Spread Operators ( = ...)  Nekaalta ha Array sa                rightside paa ____________
+const restaurant = {
+        name: 'Classico Italiano',
+        location: 'Via Angelo Tavanti 23, Firenze, Italy',
+        categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+        starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+        mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+        order : function(startIndex,menuIndex){
+                return [this.starterMenu[startIndex] , this.mainMenu[menuIndex]]
+        },
+
+        openingHours: {
+                thu: {
+                        open: 12,
+                        close: 22,
+                },
+                fri: {
+                        open: 11,
+                        close: 23,
+                },
+                sat: {
+                        open: 0, // Open 24 hours
+                        close: 24,
+                },
+        },
+        orderPastaa:function(ing1,ing2,ing3){
+                console.log(`Here is your declicious pasta with ${ing1} , ${ing2} and ${ing3}`)
+        },
+};
+
+
 //spread alwaysed to build array only 
 //we use spread operator to expend(Out) an Array elmenets  and used it in new Array
 const arr = [7,8,9]
