@@ -70,6 +70,3 @@ const {
     fri:{open:o,close:c}
 } = openingHours
 console.log(o,c);
-
-
-
