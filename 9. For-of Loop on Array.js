@@ -30,11 +30,34 @@ const restaurant = {
 };
 
 //=================================================
-//================= For Of Loop ==================
+//================= Looping Array _ For Of Loop ==================
 //=================================================
 const menu = [...restaurant.starterMenu,...restaurant.mainMenu]
 
 //1. item
-for (let item of menu)console.log(item)
+for (let item of menu) console.log(item)
+        console.log(" ")
+
+//2. entrieds
+console.log(...menu.entries())//menu.entries())
+console.log(" ")
+
+//3. item with index
+for (let item of menu.entries()) {
+        console.log(item[0] + " : " +item[1])
+}
+console.log(" ")
+
+//4. entries [i,item]
+for (let [i,item] of menu.entries()) {
+        console.log(i + " : " + item);
+}
+console.log(" ")
+
+
+for (let [i,item] of menu.entries()) {
+  console.log(i+1 + " : " + item);
+}
+
 
 
